@@ -1,6 +1,13 @@
 {
-  "appTitle": "weather",
-  "@appTitle": {
-    "description": "The title of the application"
-  }
+  "appTitle": "Weather",
+  "currentLocationWeather": "Weather at your current location",
+  "cities": "Cities",
+  "allCities": "All cities",
+  "favouriteCities": "Favourite cities",
+  "locationDisabled": "Location services are disabled",
+  "locationDenied": "Location permissions denied",
+  "addCityButtonLabel": "City",
+  "locationDeniedForever": "Location permissions are permanently denied, we cannot request permissions",
+  "defaultErrorMessage": "An error occurred, please try again later",
+  "emptyFavouriteCitiesText": "Your favourite cities are empty, click on the + City button to add a city"
 }
