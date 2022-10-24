@@ -1,30 +1,28 @@
-# weather
+# Weather
 
-A new Flutter project.
+This app displays the weather of selected Nigerian cities
+
+The weather data are gotten from [Open Weather Map](https://openweathermap.org/)
+
+The cities data are gotten from [Simple Maps](https://simplemaps.com/data/ng-cities)
 
 ## Getting Started
 
-This project is a starting point for a Flutter application that follows the
-[simple app state management
-tutorial](https://flutter.dev/docs/development/data-and-backend/state-mgmt/simple).
+Get an [API key](https://home.openweathermap.org/api_keys) from Open Weather Map
 
-For help getting started with Flutter development, view the
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Create an `.env` file in the project's root, and paste the text below into the file
 
-## Assets
 
-The `assets` directory houses images, fonts, and any other files you want to
-include with your application.
+```
+OPEN_WEATHER_MAP_API_KEY=<YOUR_API_KEY>
+```
 
-The `assets/images` directory contains [resolution-aware
-images](https://flutter.dev/docs/development/ui/assets-and-images#resolution-aware).
+Replace ```<YOUR_API_KEY>``` with your Open Weather Map [API key](https://home.openweathermap.org/api_keys)
 
-## Localization
+`cd` into the project's root directory and run
 
-This project generates localized messages based on arb files found in
-the `lib/src/localization` directory.
+```
+flutter pub run build_runner build --delete-conflicting-outputs
 
-To support additional languages, please visit the tutorial on
-[Internationalizing Flutter
-apps](https://flutter.dev/docs/development/accessibility-and-localization/internationalization)
+flutter run
+```
